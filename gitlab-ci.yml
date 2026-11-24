@@ -1,0 +1,32 @@
+stages:
+  - test
+  - build
+  
+  test:
+    stage: test
+    image: python:3.10
+    script:
+      - pip install hatch
+      - hatch test
+    coverage: '/TOTAL.*\s+(\d+%)$/'
+
+  build:
+    stage: build
+    image: python:3.10
+    script:
+      - pip install hatch
+      - hatch build
+      - ls -la dist/
+    only:
+      - tags
+
+  deploy-dev:
+    stage: build
+    image: python:3.10
+    script:
+      - pip install hatch
+      - hatch build
+      - ls -la dist/
+    only:
+      - develop
+      

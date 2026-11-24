@@ -1,5 +1,9 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
+[tool.hatch.version]
+source="vcs"
+[tool.hatch.build.hooks.vcs]
+version-file = "src/my_arithmetic_$USER/_version.py"
 build-backend = "hatchling.build"
 
 [project]
