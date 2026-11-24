@@ -1,5 +1,6 @@
 # my-arithmetic-murtaza
 
+<<<<<<< HEAD
 
 
 ## Getting started
@@ -91,3 +92,24 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+=======
+[![PyPI - Version](https://img.shields.io/pypi/v/my-arithmetic-murtaza.svg)](https://pypi.org/project/my-arithmetic-murtaza)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/my-arithmetic-murtaza.svg)](https://pypi.org/project/my-arithmetic-murtaza)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install my-arithmetic-murtaza
+```
+
+## License
+
+`my-arithmetic-murtaza` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+>>>>>>> d98afe2 (Initial commit)
